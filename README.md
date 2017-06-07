@@ -10,46 +10,46 @@ Catori is a composable system for composing systems. It is inspired by
 
 An initial implementation in Rust is a WIP.
 
-** Influences
+## Influences
 
-*** Univalence Axiom
+### Univalence Axiom
 The Univalence Axiom, brings the notion of equivalence being equivalent to equality. 
 https://mathoverflow.net/questions/210498/what-is-the-most-transparent-rigorous-definition-of-the-univalence-axiom
 
-*** HLists
+### HLists
 HLists are a powerful data structure, possible only in strongly typed languages, that allow for abstraction over arity
 https://stackoverflow.com/questions/11825129/are-hlists-nothing-more-than-a-convoluted-way-of-writing-tuples
 
-*** Path Dependant Types
+### Path Dependant Types
 Path Dependendant Types 
 http://lampwww.epfl.ch/~amin/dot/fpdt.pdf
 
-*** Particle Physics and Quantum Mechanics
+### Particle Physics and Quantum Mechanics
 Catori is expressed as a state machine of colliding and decaying particles. 
 Laziness is expressed as an unobserved wave.
 Escape from state machine is expressed as wormholes
 Coordination is expressed as entanglement
 Qubits might even make an appearance
 
-*** Graph Theory
+### Graph Theory
 Branching HLists form a tree. Pivoting to other dimensions, in oder to link to non-local portions of a tree,
 allow us to treat multiple interlinked trees as a general purpose graph
 
-*** Substructural Type Systems
+### Substructural Type Systems
 Rust has an affine type system that enforces allowable lifetimes of data. By having no references and
 only explicit duplication, Catori has an extremely tight lifetime model. Additionally, by having no references
 along with lifetime enforcement, all operations consume all arguments.
 
-*** Dr. Strange loves to tilt dimensions on their sides. So do I.
+### Dr. Strange loves to tilt dimensions on their sides. So do I.
 
-** Foundations
+## Foundations
 Catori is built on a very small handful of fundamental concepts. This section introduces them, using Rust notation where useful
 
 It is designed to be completely abstract, in the sense that its core implementation is all in terms of 
 traits and ZSTs (Zero Sized Types), so there is no runtime cost to any of the core reasoning.
 We will get into the runtime behavior later.
 
-*** Cat Type
+### Cat Type
 In Catori, a Cat type is anything that has an Order and has defined Equality(Ord+Eq in Rust).
 
 ```rust
@@ -74,7 +74,7 @@ impl<DEFAULT> Default for DEFAULT where DEFAULT:Category+std::default::Default{}
 
 Every type *must* be a Cat type. 
 
-*** Paths
+### Paths
 Paths come from both Homotopy Type Theory, as well as Path Depedendent Types. 
 The notion that they are possible to express in Rust comes from HLists, largely as implemented by Frunk.
 The critical difference between HLists and Catori Paths, however, is that Paths know the type of their context.
