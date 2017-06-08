@@ -40,7 +40,8 @@ Rust has an affine type system that enforces allowable lifetimes of data. By hav
 only explicit duplication, Catori has an extremely tight lifetime model. Additionally, by having no references
 along with lifetime enforcement, all operations consume all arguments.
 
-### Dr. Strange loves to tilt dimensions on their sides. So do I.
+### Dr. Strange
+Dr. Strange loves to tilt dimensions on their sides. So do I.
 
 ## Foundations
 Catori is built on a very small handful of fundamental concepts. This section introduces them, using Rust notation where useful
