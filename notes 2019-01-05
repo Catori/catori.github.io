@@ -1,0 +1,32 @@
+[Noncommutative Logic](https://en.wikipedia.org/wiki/Noncommutative_logic)
+
+# Themes
+Audience Theme
+Application
+Syntax
+Where the hard parts are?
+    Graph pruning
+  
+  
+  
+ Do ten steps beyond hello world and what the key steps are
+ structures link 
+ 
+ 
+ for all 26 letters in the alphabet choose a random word from a dictionary starting with and output words to stdout
+ 
+ inputs 
+  26 letter list
+  dictionary of words
+  stream of random integers
+  
+  sorting by length
+  
+  with input pairs sort by the second element of the pair
+  implement bubble sort in core catori
+  
+  define "swap"
+  
+  
+  structural sharing
+  
